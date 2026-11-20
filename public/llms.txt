@@ -1,0 +1,37 @@
+# Unlloo 10,000 USDC Credit Transparency Portal
+
+> Public Ethereum Mainnet audit portal and smart contract specification for a 10,000 USDC 90 to 95 day uncollateralized credit request on Unlloo.
+
+## Core Loan Parameters
+- Platform: Unlloo (Ethereum Mainnet under collateralized reputation lending)
+- Principal requested: 10,000 USDC
+- Maximum APR cap: 15% to 20% APR (competitive lender bidding during 7 to 14 day window)
+- Repayment horizon: 90 to 95 days (early repayment allowed at any time with zero penalty)
+- Minimum platform funding activation threshold: 80%
+- Borrower Ethereum Mainnet wallet: 0xf6Bb92Ac612D814F2A1e67Bf713F2f732419AC87
+- Etherscan profile: https://etherscan.io/address/0xf6Bb92Ac612D814F2A1e67Bf713F2f732419AC87
+- Public repository and contract source: https://github.com/Azus2026/unlloloan
+
+## Exact On Chain Capital Allocation (10,000 USDC Total)
+1. Arbitrage operational liquidity: 6,000 USDC (60%). Base stablecoin liquidity and market neutral DEX and CEX spread execution with zero directional leverage.
+2. Dedicated RPC and WebSocket nodes (3 months): 1,500 USDC (15%). Institutional Alchemy and QuickNode plans for mempool streaming and low latency execution.
+3. Gas reserve and private bundles: 1,400 USDC (14%). Gas coverage across Arbitrum, Base, Optimism, and Ethereum Mainnet including Flashbots private bundles.
+4. Dedicated low latency VPS servers (3 months): 600 USDC (6%). Cloud servers co located near RPC endpoints in US East Virginia or Frankfurt for 24/7 uptime.
+5. On chain transparency portal and smart contract: 500 USDC (5%). Deployment and maintenance of LoanTransparencyRegistry.sol and this read only public invoice tracker.
+
+## Repayment Guarantee (Real World Daily Cash Flow)
+Principal and accrued interest repayment do not depend solely on arbitrage bot yields. Repayment is backed 100% by daily billing across three active non crypto businesses:
+1. Full stack software, web applications, and Web3 smart contract engineering.
+2. Architectural and interior design services.
+3. Construction and remodeling project execution.
+
+## Smart Contract Verification
+- Contract file: contracts/LoanTransparencyRegistry.sol
+- Lifecycle states: PreFunding, Active, Repaid, Defaulted.
+- Enforcement: Immutable upper cap per USDC category; every logged expense stores vendor, USDC amount, timestamp, Ethereum transaction hash, and immutable IPFS invoice receipt CID.
+- Pre funding honesty: Prior to reaching the 80% funding threshold on Unlloo, logged spend displays 0.00 USDC with zero simulated transactions.
+
+## Direct Borrower Contact
+- X (Twitter): https://x.com/Hik453 (@Hik453)
+- Telegram: https://t.me/A0B10101 (@A0B10101)
+- Canonical portal URL: https://unlloloan.vercel.app/
