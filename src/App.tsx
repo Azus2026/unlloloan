@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { AllocationSection } from "./components/AllocationSection";
 import { AuditLedgerSection } from "./components/AuditLedgerSection";
 import { BackingIdentitySection } from "./components/BackingIdentitySection";
@@ -128,6 +129,7 @@ export function App() {
             setPathname("/");
           }}
         />
+        <Analytics />
       </div>
     );
   }
@@ -197,6 +199,8 @@ export function App() {
           footer={copy.footer}
         />
       </main>
+
+      <Analytics />
     </div>
   );
 }
